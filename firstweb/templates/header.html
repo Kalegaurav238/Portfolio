@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kale gaurav</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="/static/images/pic.jpg" alt="">
+        <h3 class="name">GAURAV KALE</h3>
+        <p class="post">Software Engineer</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li class="active"><a href="{% url 'home' %}">home</a></li>
+            <li><a href="{% url 'about' %}">about</a></li>
+            <li><a href="{% url 'education' %}">education</a></li>
+            <li><a href="{% url 'portfolios' %}">portfolio</a></li>
+            <li><a href="{% url 'contact' %}">contact</a></li>
+             <li><a href="{% url 'userForm' %}">UserForm</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+</body>
+</html>

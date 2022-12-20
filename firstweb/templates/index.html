@@ -1,0 +1,69 @@
+
+{% include "header.html" %}
+
+<link rel="stylesheet" href="/static/css/style.css">
+<!-- header section ends -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+<!-- home section starts  -->
+
+<marquee onmouseover="stop()" onmouseout="start()">
+    {% for news in newsData %}
+       <a href="/newsdetails/{{news.news_slug}}"> {{news.news_title}} </a> &nbsp; &nbsp; &nbsp;
+    {% endfor %}
+</marquee>
+
+<section class="home" id="home">
+
+
+    <h3>HI THERE !</h3>
+    <h1>I'M <span>Gaurav Kale</span></h1>
+    <p>I am pursing B.Tech graduate from College of Engineering Phaltan. Problem solving and fast learner
+        with strong communication skills. I am motivated to upgrade and expand my skill set through mentorship
+        and challenging projects. I enjoy working collaboratively but can also run with projects independently.
+    </p>
+    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+
+
+<!-- about section ends -->
+
+<!-- education section starts  -->
+
+
+
+<!-- education section ends -->
+
+<!-- portfolio section starts  -->
+
+
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+
+
+
+<!-- contact section ends -->
+
+
+<!-- scroll top button  -->
+
+<a href="#home" class="top">
+    <img src="/static/images/scroll-top-img.png" alt="">
+</a>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="/static/js/script.js"></script>
+
+
